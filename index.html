@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Prasath Manickam">
+  <title>v86 test</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="build/libv86.js"></script>
+</head>
+
+<body>
+  <!-- To invoke the Screen Adapter -->
+  <div id="emb_container">
+    <div style="white-space: pre; font: 22px monospace; line-height: 22px"></div>
+    <canvas style="display: none"></canvas>
+  </div>
+  <br><br>
+
+  <!-- VM status -->
+  <div id="vm_info">
+    <strong>VM Info: </strong> <br><br>
+    Up time: <span id="uptime">0</span><br>
+    Speed: <span id="speed">0</span> mIPS <br>
+    Avg Speed: <span id="avg_speed">0</span> mIPS <br><br>
+    <strong>Network Info: </strong><br><br>
+    Bytes received: <span id="info_network_bytes_received">0</span><br>
+    Bytes transmitted: <span id="info_network_bytes_transmitted">0</span><br>
+    <br>
+  </div>
+
+  <script src="libdt.js"></script>
+</body>
+
+</html>
