@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("demo").onclick = function()
+function fun()
 {
     var emulator = window.emulator = new V86Starter({
         wasm_path: "../build/v86.wasm",
