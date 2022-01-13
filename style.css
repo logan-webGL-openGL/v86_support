@@ -87,7 +87,7 @@ h1 {
 }
 
 #vm_info {
-  position: absolute;
+  position: right;
   top: 61px;
   right: 550px;
   color:white;
