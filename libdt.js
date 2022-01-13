@@ -8,7 +8,7 @@ myElem.onclick = function()
         wasm_path: "../build/v86.wasm",
         memory_size: 128 * 1024 * 1024,
         vga_memory_size: 2 * 1024 * 1024,
-        screen_container: document.getElementById("screen_container"),
+        screen_container: document.getElementById("emb_container"),
         bios: {
             url: "../bios/seabios.bin",
         },
