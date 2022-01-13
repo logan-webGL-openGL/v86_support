@@ -1,7 +1,8 @@
 "use strict";
 
-window.onload = function()
+document.getElementById("demo").onclick = function()
 {
+    const input = document.querySelector('input');
     var emulator = window.emulator = new V86Starter({
         wasm_path: "../build/v86.wasm",
         memory_size: 1024 * 1024 * 1024,
