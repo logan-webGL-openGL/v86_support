@@ -4,7 +4,7 @@
 
 // to invoke emulator API //
 
-function MyFunction () {
+$(function () {
     var embeddedEmulator = window.emulator = new V86Starter({
         wasm_path: "build/v86.wasm",
         memory_size: 64 * 1024 * 1024,
